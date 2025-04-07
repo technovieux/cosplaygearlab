@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site Web Simple</title>
+    <title>Mon Portfolio Cosplay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- En-tête -->
     <header>
-        <h1>Bienvenue sur Mon Site Web</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À Propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>✨ CosplayCraft</h1>
+        <p>Créations uniques d'accessoires de cosplay</p>
     </header>
 
-    <main>
-        <section id="accueil">
-            <h2>Accueil</h2>
-            <p>Ceci est la page d'accueil de mon site web simple.</p>
-            <img src="https://via.placeholder.com/300" alt="Image d'exemple">
-        </section>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#a-propos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section id="apropos">
-            <h2>À Propos</h2>
-            <p>Je suis un développeur web passionné par la création de sites web simples et efficaces.</p>
-            <ul>
-                <li>Expérience en HTML, CSS et JavaScript</li>
-                <li>Connaissance des frameworks front-end (React, Vue)</li>
-                <li>Passionné par le design web et l'expérience utilisateur</li>
-            </ul>
-        </section>
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h2>Des accessoires faits main pour vos cosplays</h2>
+            <p>Découvrez des pièces uniques inspirées de vos univers préférés.</p>
+            <a href="#portfolio" class="btn">Voir mes créations</a>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Vous pouvez me contacter à l'adresse suivante :</p>
-            <a href="mailto:exemple@email.com">exemple@email.com</a>
-        </section>
-    </main>
+    <!-- Section Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <h2>Mes Créations</h2>
+        <div class="gallery">
+            <div class="item">
+                <img src="images/accessoire1.jpg" alt="Épée en résine">
+                <h3>Épée de Zelda</h3>
+                <p>Résine peinte à la main</p>
+            </div>
+            <div class="item">
+                <img src="images/accessoire2.jpg" alt="Masque de Demon Slayer">
+                <h3>Masque de Tanjiro</h3>
+                <p>Impression 3D et finition artisanale</p>
+            </div>
+            <div class="item">
+                <img src="images/accessoire3.jpg" alt="Collier de Sailor Moon">
+                <h3>Collier Sailor Moon</h3>
+                <p>Perles et métal</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- Section À propos -->
+    <section id="a-propos" class="about">
+        <h2>À propos de moi</h2>
+        <div class="about-content">
+            <img src="images/moi.jpg" alt="Photo de l'artisan">
+            <div class="text">
+                <p>Passionné(e) par le cosplay depuis 5 ans, je crée des accessoires sur mesure pour les fans et les professionnels. Chaque pièce est fabriquée avec soin en utilisant des matériaux de qualité.</p>
+                <p>📌 Disponible pour des commandes personnalisées !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message"></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fab fa-etzy"></i> Etsy</a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 Mon Site Web</p>
+        <p>&copy; 2024 CosplayCraft - Tous droits réservés</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
