@@ -25,6 +25,5 @@ items.forEach(item => {
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Merci pour votre message ! Je vous répondrai bientôt.');
     form.reset();
 });
