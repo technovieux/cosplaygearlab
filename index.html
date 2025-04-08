@@ -17,7 +17,7 @@
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="#acueil">Accueil</a></li>
+            <li><a href="#accueil">Accueil</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#a-propos">À propos</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -38,19 +38,15 @@
         <h2>Mes Créations</h2>
         <div class="gallery">
             <div class="item">
-                <img src="images/accessoire1.jpg" alt="Épée en résine">
-                <h3>Épée de Zelda</h3>
-                <p>Résine peinte à la main</p>
+                <img src="images/viktor_stick.jpg" alt="sceptre de viktor (arcane)">
+                <h3>sceptre de viktor (arcane)</h3>
+                <p>impression 3D peinte à la main</p>
             </div>
             <div class="item">
-                <img src="images/accessoire2.jpg" alt="Masque de Demon Slayer">
-                <h3>Masque de Tanjiro</h3>
-                <p>Impression 3D et finition artisanale</p>
-            </div>
-            <div class="item">
-                <img src="images/accessoire3.jpg" alt="Collier de Sailor Moon">
-                <h3>Collier Sailor Moon</h3>
-                <p>Perles et métal</p>
+                <img src="images/atlas_gauntlet.jpg" alt="gantelet atlas">
+                <h3>gantelet atlas (arcane)</h3>
+                <p>electronique, Impression 3D peinte a la main</p>
+                <p>(en cours de creation...)</p>
             </div>
         </div>
     </section>
@@ -59,32 +55,57 @@
     <section id="a-propos" class="about">
         <h2>À propos de moi</h2>
         <div class="about-content">
-            <img src="images/moi.jpg" alt="Photo de l'artisan">
+            <img src="images/logo.jpg" alt="Photo de l'artisan">
             <div class="text">
-                <p>Passionné(e) par le cosplay depuis 5 ans, je crée des accessoires sur mesure pour les fans et les professionnels. Chaque pièce est fabriquée avec soin en utilisant des matériaux de qualité.</p>
-                <p>📌 Disponible pour des commandes personnalisées !</p>
+                <p>Passionné par le cosplay et le bricolage en general, je peux fabriquer des accessoires pour tout types de cosplays, que ce soit en impression 3D ou en bois</p>
+                <p>📌je suis disponible pour des commandes personnalisées !</p>
             </div>
         </div>
     </section>
 
+
+
+
     <!-- Section Contact -->
     <section id="contact" class="contact">
-        <h2>Contactez-moi</h2>
-        <form>
-            <input type="text" placeholder="Votre nom" required>
-            <input type="email" placeholder="Votre email" required>
-            <textarea placeholder="Votre message"></textarea>
+        <h2>une envie particuliere ? contactez-moi</h2>
+
+
+
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" placeholder="Votre message"></textarea>
             <button type="submit" class="btn">Envoyer</button>
         </form>
+
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init('ldonkRtV36OrlnPTV'); // Remplace par ton ID
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                emailjs.sendForm('service_nxtf0wp', 'template_im4e7h8', this) // Remplace par tes IDs
+                .then(() => alert('Message envoyé !'))
+                .catch(() => alert('Erreur...'));
+                });
+        </script>
+
+
+
         <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="#"><i class="fab fa-etzy"></i> Etsy</a>
+            <a href="https://www.instagram.com/cosplay_gear_lab/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <!--   <a href="#"><i class="fab fa-etzy"></i> Etsy</a>   -->
         </div>
     </section>
 
+
+
+
+
+
     <!-- Pied de page -->
     <footer>
-        <p>&copy; 2024 CosplayCraft - Tous droits réservés</p>
+        <p>&copy; 2025 CosplayCraft - Tous droits réservés</p>
     </footer>
 
     <script src="script.js"></script>
